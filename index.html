@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List OctaNet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="title">Todo List</p>
+    <div class="block">
+        <input type="text" placeholder="Enter name of the Task" id="input-ele" onkeydown="
+        if (event.key === 'Enter') {
+            todoFun();
+        }
+        ">
+        <input type="date" class="date-input-element" onkeydown="
+        if (event.key === 'Enter') {
+            todoFun();
+        }">
+        <button class="add-btn" onclick="todoFun()">+Add Task</button>
+        <div class="container"></div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
